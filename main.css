@@ -90,7 +90,7 @@ nav .fa-solid, nav input{
     font-size: 1.3rem;
 }
 .Redes a:hover{
-    color:var(--Color-Base);
+    color:var(--Base);
     background: var(--svgColor);
     border-radius: 80%;
 }
@@ -139,7 +139,7 @@ section{
 .BG-Negro{background: #000;}
 /*             COLOR  TEXTO            */
 .T-Blanco{color:var(--Fondo)}
-.T-Base{color: var(--Color-Base);}
+.T-Base{color: var(--Base);}
 .T-CLaro{color: var(--Fondo-Oscuro);}
 
     /*//////////////////////       Home        //////////////////////*/
@@ -209,7 +209,7 @@ section{
 }
 .descripcion span{
     font-weight: 900;
-    border-bottom: solid 2px var(--Color-Base);
+    border-bottom: solid 2px var(--Base);
     line-height: 1.5rem;
 }
 
@@ -266,7 +266,7 @@ section{
 }
 #Services .service .fa-solid {
     font-size: 3rem;
-    color: var(--Color-Base);
+    color: var(--Base);
 }
 #Services .service h3{
     font-weight: 600;
@@ -289,7 +289,7 @@ section{
     font-weight: 700;
 } 
 .My ul{
-    border-left: solid var(--Color-Base) 2px;
+    border-left: solid var(--Base) 2px;
     padding-left: 5px;
     list-style: none;
 }
@@ -371,6 +371,7 @@ section{
 }
 #FAQ .fa-solid,#FAQ input{
     grid-column: 1/2;
+    grid-row:1/2;
     width: 0.8rem;
     height: 0.8rem;
     box-sizing: border-box;
@@ -379,7 +380,7 @@ section{
     grid-column:2/3;
     grid-row: 1/2;
 }
-#FAQ .question div{
+#FAQ .question p{
     padding: 3PX 0 6PX;
     display: none;
 }
@@ -389,12 +390,14 @@ section{
 #FAQ .fa-solid{
     pointer-events: none;
 }
-#FAQ input:checked~div{
+#FAQ input:checked~p{
     grid-column: 2/3;
-    display: contents;
+    display: block;
+    width: 100%;
+    padding-bottom: 1rem;
 }
 #FAQ input:checked~.fa-solid{
-    rotate: 90deg;
+    rotate: 180deg;
 }
 footer{
     display: flex;
