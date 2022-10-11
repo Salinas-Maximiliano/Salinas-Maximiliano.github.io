@@ -264,6 +264,13 @@ section{
     grid-template-rows: repeat(2,1fr);
 
 }
+#Services li{
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1.5REM;
+}
 #Services .service .fa-solid {
     font-size: 3rem;
     color: var(--Base);
